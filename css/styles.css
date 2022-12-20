@@ -13,6 +13,19 @@
 --second-background-color: #F4F4FD;
 }
 
+h1, h2, h3, h4, p, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 1px;
+    margin: 0;
+}
+
 body {
     background-color: var(--first-title-color);
     font-family: 'Roboto', 'sans-serif';
@@ -21,7 +34,7 @@ body {
     color: var(--main-text-color);
 }
 
-.list {list-style: none}
+.list {list-style: none;}
 .link {text-decoration: none;}
 .visually-hidden {
     position: absolute;
@@ -45,6 +58,7 @@ body {
     font-size: 18px;
     line-height: calc(24/18);
     letter-spacing: 0.03em;
+    display: flex;
 }
 .logo-second-part {color: var(--navigation-color);}
 
@@ -72,33 +86,46 @@ color: var(--contacts-color);}
 
 /* Tittle in the center */
 
-.hero {background-color: var(--navigation-color);}
+.hero {
+    background-color: var(--navigation-color);
+    text-align: center;
+}
 .hero-title {
 font-weight: 700;
 font-size: 56px;
 line-height: calc(60/56);
-text-align: center;
 letter-spacing: 0.02em;
 color: var(--first-title-color);
+margin-bottom: 48px;
 }
 
 /* Button */
 
+.btn {
+    
+}
+
 .btn-primary {
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 16px 32px;
+    margin-bottom: 192px;
+    
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(19/16);
-    display: flex;
-    align-items: center;
     letter-spacing: 0.04em;
     color: var(--first-btn-color);
     background-color: var(--accent-color);
     cursor: pointer;
-    margin: 0 auto;
 }
 
 .btn-secondary {
+    border-radius: 4px;
+    border: 1px solid var(--second-btn-color);
+    padding: 12px 24px;
+
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
