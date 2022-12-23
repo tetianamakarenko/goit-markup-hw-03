@@ -33,7 +33,6 @@ img {
     padding-right: 15px;
     outline: 1px;
     margin: 0 auto;
-    outline: 1px solid red;
 }
 
 .list {
@@ -75,7 +74,6 @@ img {
 /* Logo */
 .logo-wrap {
     margin-right: 76px;
-
 }
 
 .logo-first-part {
@@ -124,11 +122,10 @@ img {
 /* Tittle in the center */
 .hero {
     background-color: var(--navigation-color);
-    text-align: center;
     padding-top: 192px;
     padding-bottom: 192px;
-    margin: auto;
 }
+
 .hero-title {
     max-width: 494px;
     font-weight: 700;
@@ -136,8 +133,14 @@ img {
     line-height: calc(60/56);
     letter-spacing: 0.02em;
     color: var(--first-title-color);
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 48px;
 }
+.hero > .container {
+    text-align: center;
+}
+
 /* Button */
 .btn {}
 
@@ -298,7 +301,7 @@ margin-bottom: 72px;
 }
 
 .service-item {
-    width: calc((100% - 48px) / 3);
+    width: calc((100% - 54px) / 3);
 }
 
 .service-name {
