@@ -16,12 +16,9 @@ body {
     color: var(--main-text-color);
 }
 
-h1, h2, h3, h4, p, ul {
+h1, h2, h3, h4, p, ul, ol {
     margin-top: 0;
     margin-bottom: 0;
-}
-ul, ol {
-    margin: 0;
 }
 
 img {
@@ -29,12 +26,18 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 .container {
     width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     outline: 1px;
     margin: 0 auto;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .list {
@@ -122,14 +125,16 @@ img {
 }
 
 /* Tittle in the center */
-.hero {
+.hero-section {
     background-color: var(--navigation-color);
-    padding-top: 192px;
-    padding-bottom: 192px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
+    margin: auto;
 }
 
 .hero-title {
-    max-width: 494px;
+    /* max-width: 494px; */
     font-weight: 700;
     font-size: 56px;
     line-height: calc(60/56);
@@ -139,45 +144,36 @@ img {
     margin-left: auto;
     margin-bottom: 48px;
 }
-.hero > .container {
-    text-align: center;
-}
 
 /* Button */
-.btn {}
+.btn {
+    border-radius: 4px;
+    font-family: inherit;
+    border: 1px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
 
 .btn-primary {
     display: inline-block;
-    min-width: 169px;
-    height: 56px;
-    border-radius: 4px;
-    border: 1px solid transparent;
-
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
+    border: solid transparent;
+    padding: 16px 32px;
     line-height: calc(19/16);
-    letter-spacing: 0.04em;
     color: var(--first-title-color);
     background-color: var(--accent-color);
-    cursor: pointer;
 }
 
 .btn-secondary {
-    border-radius: 4px;
-    border: 1px solid var(--btn-color);
-    padding: 12px 24px;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.5;
     display: flex;
+    border: solid var(--btn-color);
+    padding: 12px 24px;
+    line-height: 1.5;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.04em;
     color: var(--accent-color);
     background-color: var(--background-color);
-    cursor: pointer;
 }
 
 .btn:hover, .btn:focus {background-color: var(--btn-focur-color);}
@@ -196,9 +192,9 @@ color: var(--navigation-color);
 
 /* Sections with a short description */
 
-.company {
+.company-section {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 0;
 }
 .company-list {
     display: flex;
@@ -225,9 +221,6 @@ color: var(--navigation-color);
 
 /* Pictures   */
 
-.pictures {
-    padding-bottom: 120px;
-}
 .pictures-title {
 margin-bottom: 72px;
 }
@@ -242,8 +235,6 @@ margin-bottom: 72px;
 
 .team {
     background-color: var(--background-color);
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 .team-title {
     margin-bottom: 72px;
@@ -258,6 +249,9 @@ margin-bottom: 72px;
 
 .team-item {
     width: calc((100% - 72px) / 4);
+    background: var(--first-title-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-member-name {
@@ -281,7 +275,6 @@ margin-bottom: 72px;
 
 .portfolio {
     padding-top: 96px;
-    padding-bottom: 120px;
 }
 
 .buttons-list {
