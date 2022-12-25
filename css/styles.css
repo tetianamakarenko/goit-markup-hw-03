@@ -93,7 +93,7 @@ img {
 .logo-second-part {color: var(--navigation-color);}
 .header-list .link {
     color: var(--navigation-color);
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     line-height: calc(24/16);
     letter-spacing: 0.02em;
@@ -150,7 +150,7 @@ img {
     border-radius: 4px;
     font-family: inherit;
     border: 1px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.04em;
     cursor: pointer;
@@ -257,7 +257,7 @@ margin-bottom: 72px;
 .team-member-name {
     margin-top: 32px;
     margin-bottom: 8px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
     line-height: calc(24/20);
     letter-spacing: 0.02em;
@@ -308,7 +308,7 @@ margin-bottom: 72px;
 }
 
 .service-title {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
     line-height: calc(24/20);
     letter-spacing: 0.02em;
